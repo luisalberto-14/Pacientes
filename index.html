@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Paciente Registro</title>
+	<link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+	<h1 class="titulo-logo">Registro de Pacientes</h1>
+	<div class="contenido-flex">
+		<section class="contenido-formulario">
+			<h2 class="titulo-formulario">En este formulario registra a <span class="span-formulario">Tus pacientes</span></h2>
+			<form action="" class="formulario" enctype="multipart/form-data">
+				 <fieldset>
+				 	<legend>Administra a los pacientes</legend>
+				 	<div>
+				 		<label for="nombre">Nombre: </label>
+				 		<input type="text" id="nombre" name="nombre" placeholder="Escribe tu nombre">
+				 	</div>
+				 	<div>
+				 		<label for="apellido">Apellido: </label>
+				 		<input type="text" id="apellido" name="apellido" placeholder="Escribe tu apellido">
+				 	</div>
+				 	<div>
+				 		<label for="email">Email: </label>
+				 		<input type="text" id="email" name="email" placeholder="Escribe tu email">
+				 	</div>
+				 	<div>
+				 		<label for="telefono">Telefono: </label>
+				 		<input type="number" id="telefono" name="telefono" placeholder="Escribe tu telefono">
+				 	</div>
+					<div>
+						<label for="img">Foto del Paciente:
+							<br><br><img src="./imagen.png" alt="subir foto" class="img-paciente">
+						</label>
+						<input type="file" class="input-file" id="img" name="imagen">
+						
+					</div>
+				 	<div>
+				 		<label for="fecha">Fecha de la cita: </label>
+				 		<input type="date" id="fecha" name="fecha" placeholder="Escribe tu fecha">
+				 	</div>
+				 	<div>
+				 		<label for="hora">Hora de la cita: </label>
+				 		<input type="time" id="hora" name="hora" placeholder="Escribe tu hora">
+				 	</div>
+				 	<div>
+				 		<label for="sintoma">sintoma: </label>
+				 		<textarea id="sintoma" name="sintoma" placeholder="Escriba el sintoma del paciente"></textarea>
+				 	</div>
+				 </fieldset>
+				 <div class="button-flex">
+				 	<input type="submit" class="button" value="Agregar Paciente">
+				 </div>
+			</form>
+		</section>
+		<section class="contenido-paciente">
+			<h2 class="titulo-contenido">Aqui podras ver a <span class="span-contenido">Tus pacientes</span></h2>
+			<div class="contenedor-informacion" id="contenedor-informacion">
+				<!-- <div id="contenedor-paciente" class="contenedor-paciente">
+					<ol>
+						<li>Nombre: <span class="description">Luis</span></li>
+						<li>Nombre: <span class="description">Lozano</span></li>
+						<li>Nombre</li>
+						<li>Nombre</li>
+						<li>Nombre</li>
+					</ol>
+				</div>
+				<div id="contenedor-paciente" class="contenedor-paciente">
+					<ol>
+						<li>Nombre</li>
+						<li>Nombre</li>
+						<li>Nombre</li>
+						<li>Nombre</li>
+						<li>Nombre</li>
+					</ol>
+				</div> -->
+			</div>
+		</section>
+	</div>
+	<!-- El sweet alert debe de ir antes de todo para que pueda funcionar el cdn -->
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>  
+	<script type="text/javascript" src="src/app.js"></script>
+</body>
+</html>
